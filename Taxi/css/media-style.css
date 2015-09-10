@@ -38,6 +38,9 @@
     width:50%;
     text-align: right;
   }
+  .headMini .nav .full_ico {
+    display:inline-block;
+  }
   .headMini .nav .mag {
     display:inline-block;
     width: 50px;
@@ -288,10 +291,13 @@
     width:20%;
     text-align: right;
   }
-  .headMini .nav .mag {
+  .headMini .nav .full_ico {
+    display:inline-block;
+  }
+  .headMini .nav .full_ico .mag {
     display:none;
   }
-  .headMini .nav .im {
+  .headMini .nav .full_ico .im {
     display:none;
   }
   .head768 .slogan {
@@ -518,6 +524,7 @@
   /* PAGE NEWS  END*/
 
   .dwtx {display:table;}
+  .mobile_ico {display:inline-block;margin-right:80px;}
 
 } /* @media screen and (max-width: 760px) END */
 
@@ -645,4 +652,6 @@
   -moz-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+
+
 /* МЕНЮ */
