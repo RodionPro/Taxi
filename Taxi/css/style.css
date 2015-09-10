@@ -95,9 +95,19 @@ section > section {
   position:relative;
   height: 530px;
   max-height: 530px;
+	overflow: hidden;
+	transition: height 1s ease;
+}
+
+.headBar--invis {
+	height: 0px;
 }
 
 .headBar2 {display:table;}
+
+.headBar2--invis {
+	display: none;
+}
 
 .head .logo_dog {
   position: absolute;
@@ -318,6 +328,10 @@ section > section {
   display: table;
   width: 100%;
   position: relative;
+}
+
+.content .nav--invis {
+	display: none;
 }
 .content .menu {
   list-style: none;
