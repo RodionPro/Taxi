@@ -63,7 +63,7 @@ h3 {
 section {
   display: block;
   width: 100%;
-  min-width: 320px;
+  min-width: 320px!important;
 }
 section > section {
   width: 1200px;
@@ -914,3 +914,128 @@ border-bottom:1px solid #000000;
 /* FORMS */
 
 .mobile_ico {display:none;}
+
+
+
+/* МЕНЮ */
+.menu-1 {
+  visibility:hidden;
+  position:fixed;
+  z-index:1;
+  width:100%;;
+  height:100%;
+  top:0;
+  left:0;
+  opacity:0;
+  background:rgba(0,0,0,0.7);
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu-1.opened {
+  visibility:visible;
+  opacity:1;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu-1-1 {
+  display:block;
+  position:absolute;
+  top:0;
+  right:-320px;
+  width:320px;
+  height:100%;
+  background: #ffffff;
+  padding-top:100px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu-1-1.opened {
+  right:0;
+  width:320px;
+  height:100%;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu-1-1 a {
+  display:block;
+  text-align: right;
+  padding:10px;
+  border:0px;
+  font:bold 30px/30px 'pts';
+}
+.menu-1-1 a:hover {
+  color:#f6b31f;
+}
+.menu-1-1 a.active {
+  color:#f6b31f;
+}
+
+
+
+.toggle-l {
+  display: inline-block;
+  position: relative;
+  width:50px;
+  height:50px;
+  margin-top:20px;
+  border-radius: 50%;
+  background: #000000;
+  cursor:pointer;
+  z-index: 10;
+  margin-right: 20px;
+}
+.toggle-l span {
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  margin: 24px 0 0 10px;
+  background: #ffffff;
+  text-align: left;
+  -webkit-transition: 350ms ease all;
+  -moz-transition: 350ms ease all;
+  transition: 350ms ease all;
+}
+.toggle-l span:before,.toggle-l span:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  -webkit-transition: 350ms ease all;
+  -moz-transition: 350ms ease all;
+  transition: 350ms ease all;
+}
+.toggle-l span:before {
+  margin: -8px 0 0 0;
+}
+.toggle-l span:after {
+  margin: 8px 0 0 0;
+}
+.toggle-l.open span {
+  background-color:transparent;
+}
+.toggle-l.open span:before,.toggle-l.open span:after {
+  margin: 0;background: #ffffff;
+}
+.toggle-l.open span:before {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.toggle-l.open span:after {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+
+/* МЕНЮ */
