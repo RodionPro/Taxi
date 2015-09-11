@@ -255,13 +255,18 @@
   }  
 
   .colorbg {
-  position:absolute;
-  z-index:-10;
-  background: #f6b21f;
-  height:150px;
-}
-  
-  
+    position:absolute;
+    z-index:-10;
+    background: #f6b21f;
+    height:150px;
+  }
+  .colorbg3 {
+    position:absolute;
+    z-index:-10;
+    background: #f6b21f;
+    height:530px;
+  }
+
   .head768 {
     display:table;
     width:100%;

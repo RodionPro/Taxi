@@ -68,7 +68,7 @@ section > section {
   margin: 0 auto;
 }
 
-.colorbg {
+.colorbg, .colorbg3 {
   position:fixed;
   z-index:-10;
   background: #f6b21f;
@@ -555,6 +555,25 @@ section > section {
 }
 
 .news-mat.cols2,.news-mat.cols1 {display:none;}
+
+.loadMats {
+  display: block;
+  border:0px;
+  width:200px;margin: 50px auto 20px auto;
+  text-align:center;
+  font:bold  20px/50px 'pts';
+  position: relative;
+}
+.loadMats:before {
+  content:'';
+  left:0px;
+  top:-50px;
+  position:absolute;
+  display:block;
+  width:100%;
+  height:50px;
+  background: url('../img/016.png') no-repeat 50% 50%;
+}
 /* CONTENT NEWS */
 
 /* FOOTER */
