@@ -531,7 +531,7 @@ section > section {
   height:auto;
   margin-top:60px;
   min-height: 60px;
-  background: url('/img/017.png') no-repeat 0 0;
+  background: url('../img/017.png') no-repeat 0 0;
   padding: 0 0 0 160px;
   font: 20px/26px 'cc';
   text-transform: uppercase;
