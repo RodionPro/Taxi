@@ -12,7 +12,7 @@ $(document).ready(function() {
 			$mainHead.addClass('headBar__wrapper--invis');
 			$nav.addClass('nav--invis');
 			$fixedHead.removeClass('headBar2--invis');
-			$(window).scrollTop(1);
+			$(window).scrollTop(5);
 		}
 		else if(t==0) {
 			$mainHead.removeClass('headBar__wrapper--invis');
