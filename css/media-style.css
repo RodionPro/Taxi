@@ -277,7 +277,7 @@
     height:70px;
   }
   .headMini .logo {
-    width:80%;
+    width:50%;
     height:79px;
     float:left;
   }
@@ -288,8 +288,10 @@
     border:0px;
   }
   .headMini .nav {
-    width:20%;
+    width:50%;
+    height: 79px;
     text-align: right;
+    float: right;
   }
   .headMini .nav .full_ico {
     display:inline-block;
@@ -524,14 +526,7 @@
   /* PAGE NEWS  END*/
 
   .dwtx {display:table;}
-  .mobile_ico {display:inline-block;margin-right:80px;width:228px;}
+  .mobile_ico {display: inline-block;margin-right:70px;}
 
 } /* @media screen and (max-width: 760px) END */
-
-@media screen and (max-width: 370px) {  
-.toggle-l {
-  margin-top:0px;
-}
-
-}
 
